@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+#TG: @hy499
 
 import asyncio
 import os
@@ -15,7 +16,6 @@ from .session import SessionMixin
 
 
 class ClonerLogic(SessionMixin, MonitorMixin, ForwardingMixin, PoolMixin, MappingMixin):
-    """Telegram cloning coordinator composed from focused core mixins."""
 
     def __init__(self, config, logger_callback):
         self.config = config
