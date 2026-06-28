@@ -28,7 +28,6 @@ ctk.set_default_color_theme("blue")
 
 
 class AppUI(SettingsTabMixin, StrategyTabMixin, PoolTabMixin, LogMixin, ctk.CTk):
-    """Fluent 风格桌面控制台外壳，业务逻辑仍通过现有 mixin 方法执行。"""
 
     PAGE_META = {
         "overview": ("总览", "查看运行状态、账号健康度和当前转发任务"),
@@ -469,7 +468,6 @@ class AppUI(SettingsTabMixin, StrategyTabMixin, PoolTabMixin, LogMixin, ctk.CTk)
         ui.button(action, "保存策略", self._save_settings_from_page, "primary").grid(row=0, column=2)
 
     def _tab_scroll(self, tab):
-        """兼容旧页面 mixin：新页面本身已经是可滚动容器。"""
         tab.grid_columnconfigure(0, weight=1)
         tab.grid_columnconfigure(1, weight=1)
         return tab
