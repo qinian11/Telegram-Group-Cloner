@@ -10,12 +10,6 @@ from telethon.errors import SessionPasswordNeededError, PhoneCodeInvalidError
 
 
 class TelegramLogin:
-    """
-    登录模块（UI 无关），支持：
-    - 异步登录（外部事件循环）
-    - 阻塞式登录（内部事件循环）：便于批量初始化 session
-    """
-
     def __init__(self, parent_window=None, log_callback: Optional[Callable[[str], None]] = None):
         self.parent_window = parent_window
         self.log = log_callback or (lambda s: print(f"[{datetime.now():%H:%M:%S}] {s}"))
@@ -68,8 +62,6 @@ class TelegramLogin:
         finally:
             if self.client and self.client.is_connected():
                 await self.client.disconnect()
-
-    # 阻塞式封装，便于脚本调用
     def login_blocking(
         self,
         api_id: int,
