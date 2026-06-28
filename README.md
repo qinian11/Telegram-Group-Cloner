@@ -78,8 +78,12 @@ shard_index = 0
 2. 再在策略页调整节流、替换规则和账号池策略。
 3. 先登录监听账号，再补充克隆账号池。
 4. 先小流量验证日志和账号状态，再逐步扩大使用范围。
-
 ## 合规提示
 请仅在合法、合规、明确授权的场景中使用本工具，并遵守 Telegram 及目标群组的相关规则。
+## 尾声
+熬夜更新不易，喜欢请打赏咖啡：
+```text
+TGCimkGvU5jNux68FJzcNRw2Zpz3izNwhm
+```
 <img width="2557" height="1387" alt="image" src="https://github.com/user-attachments/assets/b925b91e-dcf5-44e7-8d74-c942fd8a36a8" />
 
