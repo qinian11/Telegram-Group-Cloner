@@ -6,8 +6,6 @@ from .theme import DesignTokens as T
 
 
 class Tooltip:
-    """轻量 Tooltip，用于侧栏收起和图标按钮说明。"""
-
     def __init__(self, widget, text):
         self.widget = widget
         self.text = text
@@ -44,8 +42,6 @@ class Tooltip:
 
 
 class Toast(ctk.CTkFrame):
-    """非阻塞提示条，替代普通保存成功弹窗。"""
-
     def __init__(self, master):
         super().__init__(master, corner_radius=T.radius_sm)
         self.label = ctk.CTkLabel(self, text="", font=T.font(13))
