@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-简易账号管理器（可与 UI 结合，不依赖 UI）
-- 统一保存/删除 session
-- 批量初始化登录（需要配合 telegram_login 的回调）
+TG: @hy499
 """
 
 import os
@@ -20,9 +18,6 @@ class AccountManager:
         self.accounts: Dict[str, Dict[str, Any]] = {}  # key: session_name -> info
 
     def add_account(self, session_name: str, api_id: int, api_hash: str, phone: str):
-        """
-        注册一个账号记录（未必已登录）
-        """
         path = os.path.join(self.sessions_dir, session_name)
         self.accounts[session_name] = {
             "api_id": api_id,
@@ -37,9 +32,6 @@ class AccountManager:
         # 不主动删 session 文件，避免误删，可按需补充
 
     def login_account(self, session_name: str, code_getter, pwd_getter) -> bool:
-        """
-        交互式登录，生成/更新 session
-        """
         info = self.accounts.get(session_name)
         if not info:
             self.log(f"{session_name} 不存在")
