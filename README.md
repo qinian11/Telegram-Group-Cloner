@@ -1,5 +1,6 @@
 
 联系作者TG：[@hy499](https://t.me/hy499)
+更多工具频道：[@HY599](https://t.me/HY599)
 
 # Telegram 群组克隆控制台
 用于管理 Telegram 监听账号、克隆账号池、消息替换和运行策略。
