@@ -1,36 +1,31 @@
-# Telegram 群组克隆控制台
 
-基于 `Telethon + CustomTkinter` 的桌面工具，用于管理 Telegram 监听账号、克隆账号池、消息替换和运行策略。
+联系作者TG：@hy499
+
+# Telegram 群组克隆控制台
+用于管理 Telegram 监听账号、克隆账号池、消息替换和运行策略。
 
 ## 启动
-
 ```bash
 pip install -r requirements.txt
 python main.py
 ```
 
-根目录只保留 `main.py` 作为 Python 启动入口，运行代码集中在 `app/` 包内。
-
 ## 主要能力
-
 - 监听一个或多个源群组，并将消息转发到目标群组。
 - 管理监听账号和多个克隆账号 session。
 - 支持用户 ID 和关键词黑名单。
-- 支持文本替换，包含 `literal` 和 `regex` 模式。
+- 支持文本替换，包含 `普通文本替换` 和 `正则替换` 模式。
 - 支持可选的昵称和头像同步。
 - 支持每日克隆上限、身份切换冷却、发送间隔和自适应节流。
 - 支持账号池状态查看、日志导出和配置校验。
 
 ## 配置文件
-
 配置文件位置：
-
 ```text
 setting/config.ini
 ```
 
 示例：
-
 ```ini
 [telegram]
 api_id = 123456
@@ -71,25 +66,19 @@ shard_index = 0
 ```
 
 ## 目录结构
-
 - `main.py`：启动入口。
-- `app/ui/`：界面层。
-- `app/core/`：Telegram 核心业务层。
-- `app/config/`：配置读写。
-- `app/services/`：账号登录和账号管理服务。
+- `app/`：主要处理
 - `setting/`：配置文件。
 - `sessions/`：Telegram session 文件。
 - `sessions_banned/`：受限账号 session 归档。
-- `cache/`：运行缓存。
-- `docs/module_structure.md`：详细模块结构说明。
 
 ## 使用建议
-
 1. 先在设置页填写 API、监听手机号、源群组和目标群组。
 2. 再在策略页调整节流、替换规则和账号池策略。
 3. 先登录监听账号，再补充克隆账号池。
 4. 先小流量验证日志和账号状态，再逐步扩大使用范围。
 
 ## 合规提示
-
 请仅在合法、合规、明确授权的场景中使用本工具，并遵守 Telegram 及目标群组的相关规则。
+<img width="2557" height="1387" alt="image" src="https://github.com/user-attachments/assets/b925b91e-dcf5-44e7-8d74-c942fd8a36a8" />
+
