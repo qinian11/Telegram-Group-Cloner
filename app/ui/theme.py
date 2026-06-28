@@ -1,10 +1,7 @@
 # -*- coding: utf-8 -*-
 import customtkinter as ctk
 
-
 class DesignTokens:
-    """集中管理 UI 尺寸、间距、圆角和语义色。"""
-
     space_1 = 4
     space_2 = 8
     space_3 = 12
