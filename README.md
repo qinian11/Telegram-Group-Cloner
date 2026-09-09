@@ -34,10 +34,6 @@ python main.py --self-test
 ## 合规提示
 请仅在合法、合规、明确授权的场景中使用本工具，并遵守 Telegram 及目标群组的相关规则。
 ## 尾声
-熬夜更新不易，喜欢请打赏咖啡：
-```text
-TGCimkGvU5jNux68FJzcNRw2Zpz3izNwhm
-```
 <img width="1203" height="837" alt="image" src="https://github.com/user-attachments/assets/41ecea4e-bfb3-4e05-921f-1b877b0d9914" />
 
 
